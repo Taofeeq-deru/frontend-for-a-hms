@@ -1,0 +1,390 @@
+body{
+    max-height: auto;
+    max-width: 100%;
+    padding: 0;
+    margin: auto;
+}
+header .contact-links{
+    background: rgb(221, 228, 241);
+    height: 35px;
+    margin-top: -16px;
+    color: rgb(110, 104, 104);
+    font-family: verdana;
+    font-size: 14px;
+}
+header .contact-links ul li{
+    list-style: none;
+}
+header .contact-links .social-media li{
+    float: left;
+    padding: 10px;
+}
+header .contact-links .social-media li a{
+    color: rgb(110, 104, 104);
+}
+header .contact-links .contact-list li{
+    float: right;
+    padding: 10px;
+}
+header .contact-links .contact-list li a{
+    text-decoration-line: none;
+    color: rgb(110, 104, 104);
+}
+header .nav{
+    background: rgb(192, 209, 241);
+    margin-top: -16px;
+    height: 70px;
+}
+header .nav ul li{
+    list-style: none;
+    display: inline-flex;
+    margin-top: -30px;
+    font-family: verdana;
+    color: rgb(83, 78, 78);
+}
+header .nav img{
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+}
+header .nav ul li h1{
+    padding-right: 500px;
+    padding-top: 15px;
+}
+header .nav ul li a{
+    text-decoration: none;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: rgb(66, 64, 64);
+    font-weight: 550;
+}
+header .nav ul li a:hover{
+    text-decoration: underline;
+}
+section{
+    height: 100%;
+    width: 100%;
+}
+section .head{
+    /*text-align: center;*/
+    text-transform: uppercase;
+    font-family: verdana;
+    margin-top: -20px;
+    width: 100%;
+    height: 500px;
+    padding-bottom: 20%;
+    background: url('../img/glass-pad.png'); 
+    background-size: 100% 95%; 
+    background-repeat: no-repeat;
+}
+section .head h1{
+    color: rgb(39, 38, 38);
+    padding-top: 15%;
+    padding-left: 35%;
+}
+section .head h1 i{
+    padding-left: 6%;
+    padding-top: 0.5%;
+    color: red;
+}
+section .head h1 span{
+    color: rgb(106, 136, 194);
+    font-size: 40px;
+    margin-left: -3%;
+}
+section .head button{
+    background: rgb(52, 72, 114);
+    border: 1px solid rgb(52, 72, 114);
+    border-radius: 5px;
+    padding: 10px;
+    margin-left: 3%;
+    text-transform: uppercase;
+    color: #fff;
+}
+section .head button:hover{
+    cursor: pointer;
+}
+section .head .dropdown{
+    position: relative;
+}
+section .head .dropdown-content{
+    position: absolute;
+    display: none;
+    min-width: 300px;
+    height: 600px;
+    background: #fff;
+    margin-top: -250%;
+}
+section .head .dropdown:hover .dropdown-content{
+    display: block;
+}
+section .appointment{
+    background: rgb(158, 173, 201);
+    font-size: 15px;
+    height: 100px;
+    margin-top: -10%;
+    margin-bottom: -0.5%;
+}
+section .appointment pre{
+    margin-left: 5%;
+    margin-top: 0;
+    padding: 10px;
+    float: left;
+    color: rgb(39, 38, 38);
+    font-weight: bold;
+    font-family: calibri;
+}
+section .appointment pre span{
+    font-size: 30px;
+}
+section .appointment button{
+    background: rgb(52, 72, 114);
+    border: 1px solid rgb(52, 72, 114);
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 30px;
+    margin-left: 20%;
+    text-transform: uppercase;
+}
+section .appointment button a{
+    text-decoration: none;
+    color: #fff;
+}
+section .appointment button a:hover{
+    text-decoration: underline;
+}
+section .welcome{
+    height: 500px;
+    font-family: calibri;
+    margin-top: -2%;
+    color: rgb(39, 38, 38);
+    background: url('../img/banner-bg.jpg'); 
+    background-size: 100% 100%; 
+    background-repeat: no-repeat;
+}
+section .welcome h1{
+    padding-bottom: 0;
+    padding-top: 1%;
+    margin-left: 5%;
+    font-size: 30px;
+}
+section .welcome pre{
+    margin-left: 5%;
+    font-family: calibri;
+    color: rgb(39, 38, 38);
+    margin-top: -1%;
+}
+section .welcome button{
+    background: rgb(52, 72, 114);
+    border: 1px solid rgb(52, 72, 114);
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 2%;
+    margin-left: 5%;
+    text-transform: uppercase;
+}
+section .welcome button a{
+    text-decoration: none;
+    color: #fff;
+}
+section .welcome button a:hover{
+    text-decoration: underline;
+}
+section .why{
+    text-align: center;
+    font-family: calibri;
+    color: rgb(39, 38, 38);
+    height: 250px;
+    background: rgb(252, 251, 251);
+    margin-top: 0;
+    padding-top: 1%;
+}
+section .why .reasons{
+    display: inline-block;
+    width: 20%;
+    margin: 0 5%;
+}
+section .specialists{
+    text-align: center;
+    font-family: calibri;
+    color: rgb(39, 38, 38);
+    height: 600px;
+    margin-top: 0;
+    padding-top: 1%;
+    background: #fff;
+}
+section .specialists .doctors{
+    display: inline-block;
+    width: 20%;
+    margin: 0 2%;
+}
+section .specialists .doctors a{
+    text-decoration: none;
+    color: rgb(39, 38, 38);
+}
+section .specialists .doctors:hover{
+    box-shadow: 0 0 5px 0.5px rgb(39, 38, 38);
+}
+section .specialists .doctors i{
+    color: rgb(39, 38, 38);
+    padding: 15px;
+}
+section .specialists button{
+    background: rgb(52, 72, 114);
+    border: 1px solid rgb(52, 72, 114);
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 0.5%;
+    margin-left: 5%;
+    text-transform: uppercase;
+}
+section .specialists button a{
+    text-decoration: none;
+    color: #fff;
+}
+section .specialists button a:hover{
+    text-decoration: underline;
+}
+section .depts{
+    text-align: center;
+    font-family: calibri;
+    color: rgb(39, 38, 38);
+    height: 970px;
+    margin-top: 0;
+    padding-top: 1%;
+    background: rgb(252, 251, 251);
+    display: inline-block;
+}
+section .depts .dept-list{
+    display: inline-block;
+    width: 30%;
+    margin: 0 1%;
+}
+section .depts .dept-list a{
+    text-decoration: none;
+    color: rgb(39, 38, 38);
+}
+section .depts .dept-list:hover{
+    box-shadow: 0 0 5px 0.5px rgb(39, 38, 38);
+}
+section .depts button{
+    background: rgb(52, 72, 114);
+    border: 1px solid rgb(52, 72, 114);
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 0;
+    margin-left: 46%;
+    text-transform: uppercase;
+    display: block;
+}
+section .depts button a{
+    text-decoration: none;
+    color: #fff;
+}
+section .depts button a:hover{
+    text-decoration: underline;
+}
+section .blog{
+    text-align: center;
+    font-family: calibri;
+    color: rgb(39, 38, 38);
+    height: 620px;
+    margin-top: 0;
+    padding-top: 1%;
+    background: #fff;
+}
+section .blog .blog-post{
+    display: inline-block;
+    width: 30%;
+    margin: 0 1%;
+}
+section .blog .blog-post:hover{
+    box-shadow: 0 0 5px 0.5px rgb(39, 38, 38);
+}
+section .blog .blogpost pre{
+    color: rgb(39, 38, 38);
+    font-family: calibri;
+}
+section .blog .blog-post pre a{
+    text-decoration: none;
+    color: rgb(106, 136, 194);
+}
+section .blog .blog-post pre i{
+    color: rgb(106, 136, 194);
+}
+section .blog .blog-post p a{
+    text-decoration: none;
+    color: rgb(106, 136, 194);
+}
+section .blog button{
+    background: rgb(52, 72, 114);
+    border: 1px solid rgb(52, 72, 114);
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 1%;
+    margin-left: 46%;
+    text-transform: uppercase;
+    display: block;
+}
+section .blog button a{
+    text-decoration: none;
+    color: #fff;
+}
+section .blog button a:hover{
+    text-decoration: underline;
+}
+section .blog .blog-post a:hover{
+    text-decoration: underline;
+}
+footer{
+    font-family: calibri;
+    color: #fff;
+    height: 400px;
+    margin-top: 0;
+    padding-top: 7%;
+    background: rgb(29, 30, 37);
+}
+footer .subscribe{
+    margin-left: 15%;
+}
+footer .subscribe p{
+    font-size: 20px;
+    padding-left: 2%;
+}
+footer .subscribe input[type="email"]{
+    width: 200px;
+    height: 30px;
+    margin-top: -1%;
+}
+footer .subscribe input[type="submit"]{
+    height: 30px;
+    background: rgb(52, 72, 114);
+    border: 1px solid rgb(52, 72, 114);
+    color: #fff;
+}
+footer .subscribe input[type="submit"]:hover{
+    cursor: pointer;
+}
+footer .contacts{
+    float: right;
+    margin-top: -17%;
+    margin-right: 15%;
+}
+footer .contacts ul li{
+    list-style: none;
+    padding: 15px;
+    font-size: 20px;
+}
+footer .contacts ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+footer .contacts ul li a:hover{
+    text-decoration: underline;
+}
+footer .copy{
+    margin-left: 25%;
+    margin-top: 5%;
+    font-size: 18px;
+}
