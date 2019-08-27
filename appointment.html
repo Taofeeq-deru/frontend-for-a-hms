@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book An Appointment</title>
+    <link rel="stylesheet" href="css/appointment-style.css">
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Personal Information: </legend>
+            <ul>
+                <li><input type="text" placeholder="Your First Name"></li>
+                <li><input type="text" placeholder="Your Last Name"></li>
+                <li><input type="tel" placeholder="Your Phone Number"></li>
+                <li><input type="email" placeholder="Your Email"></li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>Service Required</legend>
+            <ul>
+                <li>
+                    <select name="Service" id="">
+                        <option value="">Select Department of Service</option>
+                        <option value="Dental">Dental</option>
+                        <option value="Neurology">Neurology</option>
+                        <option value="Paediatrics">Paediatrics</option>
+                        <option value="Gynaecology">Gynaecology</option>
+                        <option value="Others">Others</option>
+                    </select>
+                </li>
+                <li><textarea name="Message" id="" cols="30" rows="5" placeholder="Message"></textarea></li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>Date & Time</legend>
+            <ul>
+                <li><input type="date" value="2019-08-01" placeholder="Choose Date"></li>
+                <li><input type="time" value="07:00:00"></li>
+            </ul>
+        </fieldset>
+        <input type="submit" value="Appointment">
+    </form>
+</body>
+</html>
