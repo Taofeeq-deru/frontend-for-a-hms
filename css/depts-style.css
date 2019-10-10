@@ -1,94 +1,27 @@
-body{
-    max-height: auto;
-    max-width: 100%;
-    padding: 0;
-    margin: auto;
-}
-header .contact-links{
-    background: rgb(221, 228, 241);
-    height: 35px;
-    margin-top: -16px;
-    color: rgb(110, 104, 104);
-    font-family: verdana;
-    font-size: 14px;
-}
-header .contact-links ul li{
-    list-style: none;
-}
-header .contact-links .social-media li{
-    float: left;
-    padding: 10px;
-}
-header .contact-links .social-media li a{
-    color: rgb(110, 104, 104);
-}
-header .contact-links .contact-list li{
-    float: right;
-    padding: 10px;
-}
-header .contact-links .contact-list li a{
-    text-decoration-line: none;
-    color: rgb(110, 104, 104);
-}
-header .nav{
-    background: rgb(192, 209, 241);
-    margin-top: -16px;
-    height: 70px;
-}
-header .nav ul li{
-    list-style: none;
-    display: inline-flex;
-    margin-top: -30px;
-    font-family: verdana;
-    color: rgb(83, 78, 78);
-}
-header .nav img{
-    width: 35px;
-    height: 35px;
-    border-radius: 100%;
-}
-header .nav ul li h1{
-    padding-right: 500px;
-    padding-top: 15px;
-}
-header .nav ul li a{
-    text-decoration: none;
-    padding: 10px;
-    text-transform: uppercase;
-    font-size: 13px;
-    color: rgb(66, 64, 64);
-    font-weight: 550;
-}
-header .nav ul li a:hover{
-    text-decoration: underline;
-}
-section .head{
-    height: 400px;
-    margin-top: -3.8%;
-}
-section .head h1{
-    padding: 7% 10%;
-    color: rgb(39, 38, 38);
-    font-family: calibri;
-    font-size: 60px;
-}
 section .depts{
     text-align: center;
     font-family: calibri;
     color: rgb(39, 38, 38);
-    height: 970px;
-    margin-top: 10%;
+    /* height: 970px; */
+    margin: 5%;
     padding-top: 1%;
     background: rgb(252, 251, 251);
-    display: inline-block;
 }
 section .depts h1{
     font-size: 40px;
 }
 section .depts .dept-list{
-    display: inline-block;
+    /* display: inline-block; */
     width: 30%;
-    margin: 0 1%;
+    /* margin: 0 1%; */
+}
+section .depts .dept-list img{
+    width: 100%;
+}
+section .flex{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
 }
 section .depts .dept-list a{
     text-decoration: none;
@@ -97,54 +30,8 @@ section .depts .dept-list a{
 section .depts .dept-list:hover{
     box-shadow: 0 0 5px 0.5px rgb(39, 38, 38);
 }
-footer{
-    font-family: calibri;
-    color: #fff;
-    height: 400px;
-    margin-top: 5%;
-    padding-top: 7%;
-    background: rgb(29, 30, 37);
-}
-footer .subscribe{
-    margin-left: 15%;
-}
-footer .subscribe p{
-    font-size: 20px;
-    padding-left: 2%;
-}
-footer .subscribe input[type="email"]{
-    width: 200px;
-    height: 30px;
-    margin-top: -1%;
-}
-footer .subscribe input[type="submit"]{
-    height: 30px;
-    background: rgb(52, 72, 114);
-    border: 1px solid rgb(52, 72, 114);
-    color: #fff;
-}
-footer .subscribe input[type="submit"]:hover{
-    cursor: pointer;
-}
-footer .contacts{
-    float: right;
-    margin-top: -17%;
-    margin-right: 15%;
-}
-footer .contacts ul li{
-    list-style: none;
-    padding: 15px;
-    font-size: 20px;
-}
-footer .contacts ul li a{
-    text-decoration: none;
-    color: #fff;
-}
-footer .contacts ul li a:hover{
-    text-decoration: underline;
-}
-footer .copy{
-    margin-left: 25%;
-    margin-top: 5%;
-    font-size: 18px;
+@media screen and (max-width: 661px){
+    section .depts h1{
+        font-size: 30px;
+    }
 }

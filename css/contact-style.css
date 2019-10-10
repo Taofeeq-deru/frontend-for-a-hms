@@ -1,83 +1,9 @@
-body{
-    max-height: auto;
-    max-width: 100%;
-    padding: 0;
-    margin: auto;
-}
-header .contact-links{
-    background: rgb(221, 228, 241);
-    height: 35px;
-    margin-top: -16px;
-    color: rgb(110, 104, 104);
-    font-family: verdana;
-    font-size: 14px;
-}
-header .contact-links ul li{
-    list-style: none;
-}
-header .contact-links .social-media li{
-    float: left;
-    padding: 10px;
-}
-header .contact-links .social-media li a{
-    color: rgb(110, 104, 104);
-}
-header .contact-links .contact-list li{
-    float: right;
-    padding: 10px;
-}
-header .contact-links .contact-list li a{
-    text-decoration-line: none;
-    color: rgb(110, 104, 104);
-}
-header .nav{
-    background: rgb(192, 209, 241);
-    margin-top: -16px;
-    height: 70px;
-}
-header .nav ul li{
-    list-style: none;
-    display: inline-flex;
-    margin-top: -30px;
-    font-family: verdana;
-    color: rgb(83, 78, 78);
-}
-header .nav img{
-    width: 35px;
-    height: 35px;
-    border-radius: 100%;
-}
-header .nav ul li h1{
-    padding-right: 500px;
-    padding-top: 15px;
-}
-header .nav ul li a{
-    text-decoration: none;
-    padding: 10px;
-    text-transform: uppercase;
-    font-size: 13px;
-    color: rgb(66, 64, 64);
-    font-weight: 550;
-}
-header .nav ul li a:hover{
-    text-decoration: underline;
-}
-section .head{
-    height: 400px;
-    margin-top: -3.8%;
-}
-section .head h1{
-    padding: 7% 10%;
-    color: rgb(39, 38, 38);
-    font-family: calibri;
-    font-size: 60px;
-}
+
 section .contact-us{
-    margin: 15% 5%;
+    margin: 5% 5% 40%;
     color: rgb(39, 38, 38);
     font-size: 20px;
     font-family: calibri;
-    height: 700px;
 }
 section .contact-us h1{
     font-size: 40px;
@@ -118,54 +44,45 @@ section .contact-us .leave-message form input[type="email"]{
     height: 30px;
     width: 50%;
 }
-footer{
-    font-family: calibri;
-    color: #fff;
-    height: 400px;
-    margin-top: 2%;
-    padding-top: 7%;
-    background: rgb(29, 30, 37);
+section .contact-us .leave-message form textarea{
+    width: 95%;
 }
-footer .subscribe{
-    margin-left: 15%;
+/*max of 1024px*/
+@media screen and (max-width: 1024px){
+    section .contact-us{
+        margin-bottom: 47%;
+    }
+    section .contact-us .leave-message{
+        width: 43%;
+        margin-top: -20%;
+    }
 }
-footer .subscribe p{
-    font-size: 20px;
-    padding-left: 2%;
+/*max of 900px*/
+@media screen and (max-width: 900px){
+    section .contact-us{
+        margin-bottom: 52%;
+    }
+    section .contact-us .leave-message{
+        width: 40%;
+        margin-top: -22%;
+    }
+    section .contact-us .leave-message form input[type="submit"]{
+        width: 33%;
+    }
 }
-footer .subscribe input[type="email"]{
-    width: 200px;
-    height: 30px;
-    margin-top: -1%;
+@media screen and (max-width: 780px){
+    section .contact-us{
+        margin-left: 10%;
+        margin-bottom: 10%;
+    }
+    section .contact-us .leave-message{
+        float: none;
+        width: 100%;
+        margin-top: 0;
+    }
 }
-footer .subscribe input[type="submit"]{
-    height: 30px;
-    background: rgb(52, 72, 114);
-    border: 1px solid rgb(52, 72, 114);
-    color: #fff;
-}
-footer .subscribe input[type="submit"]:hover{
-    cursor: pointer;
-}
-footer .contacts{
-    float: right;
-    margin-top: -17%;
-    margin-right: 15%;
-}
-footer .contacts ul li{
-    list-style: none;
-    padding: 15px;
-    font-size: 20px;
-}
-footer .contacts ul li a{
-    text-decoration: none;
-    color: #fff;
-}
-footer .contacts ul li a:hover{
-    text-decoration: underline;
-}
-footer .copy{
-    margin-left: 25%;
-    margin-top: 5%;
-    font-size: 18px;
+@media screen and (max-width: 661px){
+    section .contact-us h1{
+        font-size: 30px;
+    }
 }

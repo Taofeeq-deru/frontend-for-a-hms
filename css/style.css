@@ -1,8 +1,18 @@
 body{
-    max-height: auto;
     max-width: 100%;
     padding: 0;
     margin: auto;
+    font-size: 100%;
+}
+#content{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 98;
 }
 header .contact-links{
     background: rgb(221, 228, 241);
@@ -33,8 +43,10 @@ header .contact-links .contact-list li a{
 header .nav{
     background: rgb(192, 209, 241);
     margin-top: -16px;
-    height: 70px;
+    height: 55px;
+    max-width: 100%;    
 }
+/*large nav styles*/
 header .nav ul li{
     list-style: none;
     display: inline-flex;
@@ -62,6 +74,73 @@ header .nav ul li a{
 header .nav ul li a:hover{
     text-decoration: underline;
 }
+header .nav .drop-nav{
+    display: none;
+}
+/*large nav styles end*/
+/*drop nav styles*/
+/* header .nav .drop-nav{
+    display: flex;
+    /* flex-flow: row nowrap; */
+   /* align-items: center;
+    
+} */
+header .nav .drop-nav li{
+    padding: 10px;
+    text-align: left;
+}
+header .nav .drop-nav .drop{
+    /* float: right; */
+    margin: 1% 0 0 90%;
+}
+header .nav .drop-nav .drop-content{
+    position: absolute;
+    display: flex;
+    flex-flow: column;
+    top: 0;
+    left: -400px;
+    font-weight: 500;
+    height: 720px;
+    width: 350px;
+    padding: 50px 20px;
+    z-index: 100;
+    color: #fff;
+    background: rgba(34, 34, 34, 0.95);
+    font-size: 16px;
+    transition: all 0.6s ease;
+}
+#maindrop{
+    width: 105%;
+    height: 800px;
+    margin-left: -5%;
+    margin-top: -10%;
+}
+.showdrop{
+    transform: translateX(400px);
+}
+.opacity-style{
+    background: rgba(116, 114, 114, 0.5);
+}
+header .nav .drop-nav .drop-content p{
+    margin-left: 20px;
+}
+header .nav .drop-nav .drop-content a{
+    /* display: block; */
+    padding: 20px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+}
+header .nav .drop-nav .drop-content a:hover{
+    text-decoration: underline;
+}
+header .nav .drop-nav .dropbt:focus, .dropbt:hover{
+    cursor: pointer;
+    color: #222;
+}
+header .down{
+    margin-top: auto;
+}
 section{
     height: 100%;
     width: 100%;
@@ -70,7 +149,7 @@ section .head{
     /*text-align: center;*/
     text-transform: uppercase;
     font-family: verdana;
-    margin-top: -20px;
+    margin-top: 50px;
     width: 100%;
     height: 500px;
     padding-bottom: 20%;
@@ -78,22 +157,24 @@ section .head{
     background-size: 100% 95%; 
     background-repeat: no-repeat;
 }
-section .head h1{
+section .head .make-appoint{
     color: rgb(39, 38, 38);
-    padding-top: 15%;
-    padding-left: 35%;
+    padding-top: 10%;
+    padding-left: 32%;
+    width: 25%;
+    text-align: center;
 }
-section .head h1 i{
-    padding-left: 6%;
+section .head .make-appoint i{
+    /* padding-left: 6%; */
     padding-top: 0.5%;
     color: red;
 }
-section .head h1 span{
+section .head .make-appoint h1 span{
     color: rgb(106, 136, 194);
     font-size: 40px;
     margin-left: -3%;
 }
-section .head button{
+section .head .make-appoint button{
     background: rgb(52, 72, 114);
     border: 1px solid rgb(52, 72, 114);
     border-radius: 5px;
@@ -102,21 +183,27 @@ section .head button{
     text-transform: uppercase;
     color: #fff;
 }
-section .head button:hover{
+section .head .make-appoint button:hover{
     cursor: pointer;
 }
-section .head .dropdown{
+section .head .make-appoint .dropdown{
     position: relative;
 }
-section .head .dropdown-content{
+section .head .make-appoint .dropdown-content{
     position: absolute;
     display: none;
     min-width: 300px;
-    height: 600px;
+    /* height: 600px; */
     background: #fff;
-    margin-top: -250%;
+    margin-top: -120%;
+    border: none;
+    box-shadow: 0 0 5px 0.5px rgb(39, 38, 38);
+    z-index: 99;
 }
-section .head .dropdown:hover .dropdown-content{
+/* .show{
+    display: block;
+} */
+section .head .make-appoint .dropdown:hover .dropdown-content, .dropdown:focus .dropdown-content{
     display: block;
 }
 section .appointment{
@@ -126,7 +213,7 @@ section .appointment{
     margin-top: -10%;
     margin-bottom: -0.5%;
 }
-section .appointment pre{
+section .appointment p{
     margin-left: 5%;
     margin-top: 0;
     padding: 10px;
@@ -135,7 +222,7 @@ section .appointment pre{
     font-weight: bold;
     font-family: calibri;
 }
-section .appointment pre span{
+section .appointment p span{
     font-size: 30px;
 }
 section .appointment button{
@@ -155,7 +242,7 @@ section .appointment button a:hover{
     text-decoration: underline;
 }
 section .welcome{
-    height: 500px;
+    /* height: 500px; */
     font-family: calibri;
     margin-top: -2%;
     color: rgb(39, 38, 38);
@@ -169,19 +256,19 @@ section .welcome h1{
     margin-left: 5%;
     font-size: 30px;
 }
-section .welcome pre{
+section .welcome p{
     margin-left: 5%;
     font-family: calibri;
     color: rgb(39, 38, 38);
     margin-top: -1%;
+    width: 40%;
 }
 section .welcome button{
     background: rgb(52, 72, 114);
     border: 1px solid rgb(52, 72, 114);
     border-radius: 5px;
     padding: 10px;
-    margin-top: 2%;
-    margin-left: 5%;
+    margin: 2% 5%;
     text-transform: uppercase;
 }
 section .welcome button a{
@@ -195,7 +282,7 @@ section .why{
     text-align: center;
     font-family: calibri;
     color: rgb(39, 38, 38);
-    height: 250px;
+    /* height: 250px; */
     background: rgb(252, 251, 251);
     margin-top: 0;
     padding-top: 1%;
@@ -209,15 +296,15 @@ section .specialists{
     text-align: center;
     font-family: calibri;
     color: rgb(39, 38, 38);
-    height: 600px;
+    /* height: 600px; */
     margin-top: 0;
     padding-top: 1%;
     background: #fff;
 }
 section .specialists .doctors{
     display: inline-block;
-    width: 20%;
-    margin: 0 2%;
+    width: 21%;
+    /* margin: 0 2%; */
 }
 section .specialists .doctors a{
     text-decoration: none;
@@ -250,8 +337,8 @@ section .depts{
     text-align: center;
     font-family: calibri;
     color: rgb(39, 38, 38);
-    height: 970px;
-    margin-top: 0;
+    /* height: 970px; */
+    margin-top: 10px;
     padding-top: 1%;
     background: rgb(252, 251, 251);
     display: inline-block;
@@ -259,7 +346,7 @@ section .depts{
 section .depts .dept-list{
     display: inline-block;
     width: 30%;
-    margin: 0 1%;
+    /* margin: 0 1%; */
 }
 section .depts .dept-list a{
     text-decoration: none;
@@ -277,6 +364,7 @@ section .depts button{
     margin-left: 46%;
     text-transform: uppercase;
     display: block;
+    margin-bottom: 20px;
 }
 section .depts button a{
     text-decoration: none;
@@ -289,7 +377,7 @@ section .blog{
     text-align: center;
     font-family: calibri;
     color: rgb(39, 38, 38);
-    height: 620px;
+    /* height: 620px; */
     margin-top: 0;
     padding-top: 1%;
     background: #fff;
@@ -302,15 +390,15 @@ section .blog .blog-post{
 section .blog .blog-post:hover{
     box-shadow: 0 0 5px 0.5px rgb(39, 38, 38);
 }
-section .blog .blogpost pre{
+section .blog .blogpost p{
     color: rgb(39, 38, 38);
     font-family: calibri;
 }
-section .blog .blog-post pre a{
+section .blog .blog-post p a{
     text-decoration: none;
     color: rgb(106, 136, 194);
 }
-section .blog .blog-post pre i{
+section .blog .blog-post p i{
     color: rgb(106, 136, 194);
 }
 section .blog .blog-post p a{
@@ -340,8 +428,8 @@ section .blog .blog-post a:hover{
 footer{
     font-family: calibri;
     color: #fff;
-    height: 400px;
-    margin-top: 0;
+    /* height: 400px; */
+    margin-top: 20px;
     padding-top: 7%;
     background: rgb(29, 30, 37);
 }
@@ -384,7 +472,261 @@ footer .contacts ul li a:hover{
     text-decoration: underline;
 }
 footer .copy{
-    margin-left: 25%;
-    margin-top: 5%;
+    margin: 5% 25% 0;
+    padding-bottom: 2%;
     font-size: 18px;
+    text-align: center;
+}
+/*max of 1024px*/
+@media screen and (max-width: 1024px){
+    body{
+        font-size: 80%;
+    }
+    header .nav ul li h1{
+        padding-right: 150px;
+    }
+    section .head .make-appoint{
+        font-size: 80%;
+        padding-top: 12%;
+    }
+    section .head .make-appoint h1 span{
+        font-size: 30px;
+    }
+    section .head .make-appoint i{
+        margin-left: 2%;
+    }
+    section .head button{
+        margin: 8px;
+    }
+    section .welcome{
+        margin-top: -2.5%;
+    }
+    section .flex{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+    }
+    section .why .reasons{
+        width: 220px;
+        margin: 0 0;
+    }
+    section .specialists .doctors{
+        width: 220px;
+    }
+    section .specialists .doctors img{
+        max-width: 98%;
+    }
+    section .dept-list, .blog-post{
+        width: 300px;   
+    }
+    section .dept-list img, .blog-post img{
+        max-width: 98%;
+    }
+    footer .flex{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+    footer .subscribe input[type="submit"]{
+        margin-top: 10px;
+    }
+    footer .contacts{
+        float: none;
+        margin-top: -20px;
+        /* margin-right: 0; */
+    }
+    footer .copy{
+        margin-left: 20%;
+    }
+}
+/*max of 900px*/
+@media screen and (max-width: 900px){
+    header .contact-links{
+        display: none;
+    }
+    header .nav .large-nav{
+        display: none;
+    }
+    header .nav .drop-nav{
+        display: block;
+    }
+    section .head{
+        margin-top: -1%;
+    }
+    section .head .make-appoint{
+        font-size: 70%;
+        padding-top: 15%;
+    }
+    section .head .make-appoint h1 span{
+        font-size: 26px;
+    }
+    section .head .make-appoint i{
+        margin-top: 10px;
+    }
+    section .head .make-appoint button{
+        margin: 20px -10px;
+    }
+    section .welcome{
+        margin-top: -2.8%;
+    }
+    footer .copy{
+        margin-left: 15%;
+    }
+}
+@media screen and (max-width: 780px){
+    header .nav .drop-nav .drop-content a,.nav .drop-nav .drop-content{
+        font-size: 12px
+    }
+    header .nav .drop-nav .drop{
+        margin-top: 0.5%;
+    }
+    section .head{
+        height: 400px;
+    }
+    section .head .make-appoint{
+        font-size: 50%;
+    }
+    section .head .make-appoint h1 span{
+        font-size: 22px;
+    }
+    section .head .make-appoint button{
+        padding: 5px;
+        font-size: 12px;
+    }
+    section .welcome{
+        margin-top: -3.1%;
+    }
+    section .welcome p{
+        width: 60%;
+    }
+    footer .copy{
+        margin-left: 10%;
+    }
+}
+@media screen and (max-width:   730px){
+    header .nav .drop-nav .drop{
+        margin-top: 0.2%;
+    }
+    section .appointment{
+        display: flex;
+        flex-flow: row wrap;
+        /* justify-content: space-between; */
+        height: auto;
+    }
+    section .appointment p{
+        float: none;
+        width: 60%;
+    }
+    section .appointment button{
+        height: 50px;
+        margin-right: 2%;
+        margin-left: auto;
+        clear: both;
+    }
+    section .welcome{
+        margin-top: -3.2%;
+    }
+    footer .copy{
+        margin-left: 7%;
+    }
+}
+@media screen and (max-width: 661px){
+    header .nav .drop-nav .drop{
+        margin-top: -1%;
+    }
+    /* section .appointment button{
+        margin-left: 10%;
+    } */
+}
+@media screen and (max-width: 600px){
+    header .nav .drop-nav .drop{
+        margin-top: -1.2%;
+    }
+    section .head .make-appoint button{
+        width: 120px;
+    }
+    section .welcome{
+        margin-top: -3.9%;
+    }
+    footer .copy{
+        margin-left: 2%;
+    }
+}
+@media screen and (max-width: 560px){
+    header .nav .drop-nav .drop{
+        margin: -1.5% 0 0 85%;
+    }
+    footer .subscribe{
+        margin-left: 7%;
+    }
+}
+@media screen and (max-width: 500px){
+    header .nav .drop-nav .drop{
+        margin: -3% 0 0 83%;
+    }
+    footer .subscribe{
+        margin-left: 3%;
+    }
+    footer .contacts{
+        margin-left: -5%;
+    }
+}
+@media screen and (max-width: 430px){
+    header .nav .drop-nav .drop{
+        margin: -7% 0 0 85%;
+    }
+    section .head .make-appoint{
+        padding-top: 20%;
+    }
+    section .blog .blog-post h1 + p{
+        font-size: 10px;
+    }
+    section .welcome{
+        margin-top: -6%;
+    }
+    footer .flex{
+        display: flex;
+        flex-flow: column;
+    }
+    footer .copy{
+        margin-left: 10%;
+    }
+}
+@media screen and (max-width: 375px){
+    header .nav .drop-nav h1{
+        font-size: 22px;
+    }
+    header .nav .drop-nav .drop{
+        margin: -7% 0 0 80%;
+    }
+    section .head .make-appoint{
+        padding-left: 30%;
+    }
+    section .appointment button{
+        margin-bottom: 2%;
+    }
+    section .welcome{
+        margin-top: -6.6%;
+    }
+}
+@media screen and (max-width: 320px){
+    header .nav .drop-nav .drop{
+        margin: -10% 0 0 80%;
+    }
+    header .nav .drop-nav{
+        margin-left: -10%;
+        display: inline;
+    }
+    header .nav .drop-nav .logo{
+        padding-top: 15px;
+    }
+    header .nav .drop-nav .drop-content a,.nav .drop-nav .drop-content p{
+        font-size: 10px
+    }
+    section .appointment button{
+        margin: 60% 0 2% -40%;
+    }
+    section .welcome{
+        margin-top: -7.5%;
+    }
 }
