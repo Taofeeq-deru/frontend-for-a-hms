@@ -3,88 +3,115 @@
 <head>
     <title>Our Departments</title>
     <link rel="stylesheet" href="css/depts-style.css">
+    <link rel="stylesheet" href="css/about-style.css">
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
 </head>
 <body>
-    <header>
-        <div class="contact-links">
-            <ul class="social-media">
-                <li><a href="https//:facebook.com"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="https//:twitter.com"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="https//:linkedin.com"><i class="fa fa-linkedin"></i></a></li>
-                <li><a href="https//:instagram.com"><i class="fa fa-instagram"></i></a></li>
-            </ul>
-            <ul class="contact-list">
-                <li><a href="tel:+2348180683046"><i class="fa fa-phone"></i>&nbsp;Call Us +2348180683046</a></li>
-                <li><a href="medicare@example.com"><i class="fa fa-envelope"></i>&nbsp;medicare@example.com</a></li>
-                <li><i class="fa fa-map-marker"></i>&nbsp;15, Ayangburen Rd., Ikorodu, Lagos, Nigeria</li>
-            </ul>
-        </div>
-        <div class="nav">
-            <ul>
-                <li> <h1><img src="img/logo.png" alt="medicare logo">medicare</h1></li>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="doctors.html">Doctors</a></li>
-                <li><a href="departments.html">Departments</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
-    </header>
-    <section>
-        <div class="head" style="background: url(img/about.png); background-size: 100%;">
-            <h1>Our Departments</h1>
-        </div>
-        <div class="depts">
-            <h1>Our Departments</h1>
-            <div class="dept-list">
-                <a href="departments/neurology.html"><h2><img src="img/neaurology.jpg" alt="picture of a Neurologist"><br>Neurology Department</h2>
-                <p>The department gives you the best treatment possible with the well experienced doctors always on call to attend to patients</p></a>
+    <div id="content">
+        <header>
+            <div class="contact-links">
+                <ul class="social-media">
+                    <li><a href="https//:facebook.com"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https//:twitter.com"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="https//:linkedin.com"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="https//:instagram.com"><i class="fa fa-instagram"></i></a></li>
+                </ul>
+                <ul class="contact-list">
+                    <li><a href="tel:+2348180683046"><i class="fa fa-phone"></i><span>&nbsp;Call Us +2348180683046</span></a></li>
+                    <li><a href="mailto:medicare@example.com"><i class="fa fa-envelope"></i><span>&nbsp;medicare@example.com</span></a></li>
+                    <li><i class="fa fa-map-marker"></i>&nbsp;15, Ayangburen Rd., Ikorodu, Lagos</li>
+                </ul>
             </div>
-            <div class="dept-list">
-                <a href="departments/gynaecology.html"><h2><img src="img/Gynaecology.jpg" alt="picture of a Gynaecologist"><br>Gynaecology Department</h2>
-                <p>The department gives you the best treatment possible with the well experienced doctors always on call to attend to patients</p></a>
+            <div class="nav"> <!--for large screens-->
+                <ul class="large-nav">
+                    <li> <h1><img src="img/logo.png" alt="medicare logo">medicare</h1></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="doctors.html">Doctors</a></li>
+                    <li><a href="departments.html">Departments</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <ul class="drop-nav"> <!--for small screens-->
+                    <li class="logo"><h1><img src="img/logo.png" alt="medicare logo">medicare</h1></li>
+                    <div id="maindrop">
+                        <li class="drop"><i class="fa fa-bars fa-2x dropbt" id="mydropbt"></i>
+                            <div class="drop-content" id="mydrop">
+                                <a href="index.html">Home</a>
+                                <a href="about.html">About</a>
+                                <a href="doctors.html">Doctors</a>
+                                <a href="departments.html">Departments</a>
+                                <a href="blog.html">Blog</a>
+                                <a href="contact.html">Contact</a>
+                                <a href="tel:+2348180683046"><i class="fa fa-phone"></i><span>&nbsp;Call Us +2348180683046</span></a>
+                                <a href="mailto:medicare@example.com"><i class="fa fa-envelope"></i><span>&nbsp;medicare@example.com</span></a>
+                                <p><i class="fa fa-map-marker"></i>&nbsp;15, Ayangburen Rd., Ikorodu, Lagos</p>
+                                <p class="down">We're hee for you <i class="fa fa-thumbs-o-up"></i></p>
+                            </div>
+                        </li>
+                    </div>
+                </ul>
             </div>
-            <div class="dept-list">
-                <a href="departments/paediatrics.html"><h2><img src="img/paediatrics.jpg" alt="picture of a Paediatrician"><br>Paediatrics Department</h2>
-                <p>The department gives you the best treatment possible with the well experienced doctors always on call to attend to patients</p></a>
+        </header>
+        <section>
+            <div class="head">
+                <h1>Our Departments</h1>
             </div>
-            <div class="dept-list">
-                <a href="departments/dental.html"><h2><img src="img/dental.jpg" alt="picture of a Dentist"><br>Dental Department</h2>
-                <p>The department gives you the best treatment possible with the well experienced doctors always on call to attend to patients</p></a>
+            <div class="depts">
+                <h1>Our Departments</h1>
+                <div class="flex">
+                    <div class="dept-list">
+                        <a href="departments/neurology.html"><h2><img src="img/neaurology.jpg" alt="picture of a Neurologist"><br>Neurology Department</h2>
+                        <p>The department gives you the best treatment possible with the well experienced doctors always on call to attend to patients</p></a>
+                    </div>
+                    <div class="dept-list">
+                        <a href="departments/gynaecology.html"><h2><img src="img/Gynaecology.jpg" alt="picture of a Gynaecologist"><br>Gynaecology Department</h2>
+                        <p>The department gives you the best treatment possible with the well experienced doctors always on call to attend to patients</p></a>
+                    </div>
+                    <div class="dept-list">
+                        <a href="departments/paediatrics.html"><h2><img src="img/paediatrics.jpg" alt="picture of a Paediatrician"><br>Paediatrics Department</h2>
+                        <p>The department gives you the best treatment possible with the well experienced doctors always on call to attend to patients</p></a>
+                    </div>
+                    <div class="dept-list">
+                        <a href="departments/dental.html"><h2><img src="img/dental.jpg" alt="picture of a Dentist"><br>Dental Department</h2>
+                        <p>The department gives you the best treatment possible with the well experienced doctors always on call to attend to patients</p></a>
+                    </div>
+                    <div class="dept-list">
+                        <a href="departments/surgical.html"><h2><img src="img/surgical.jpg" alt="picture of Doctors in a Surgical theatre"><br>Surgical Department</h2></a>
+                        <p>The department gives you the best treatment possible with the well experienced doctors always on call to attend to patients</p>
+                    </div>
+                </div>
             </div>
-            <div class="dept-list">
-                <a href="departments/surgical.html"><h2><img src="img/surgical.jpg" alt="picture of Doctors in a Surgical theatre"><br>Surgical Department</h2></a>
-                <p>The department gives you the best treatment possible with the well experienced doctors always on call to attend to patients</p>
+        </section>
+        <footer>
+            <div class="flex">
+                <div class="subscribe">
+                    <h1>Opening Hours</h1>
+                    <p><i class="fa fa-clock-o"></i> We are open 24/7</p>
+                    <form action="">
+                        <label><h2>Subscribe to our Newsletter</h2></label><br>
+                        <input type="email" name="email" placeholder="Enter your email here"> <input type="submit" value="SUBSCRIBE NOW">
+                    </form>
+                </div>
+                <div class="contacts">
+                    <ul>
+                        <li>
+                            <a href="https//:facebook.com"><i class="fa fa-facebook"></i></a>
+                            &emsp; <a href="https//:twitter.com"><i class="fa fa-twitter"></i></a>
+                            &emsp; <a href="https//:linkedin.com"><i class="fa fa-linkedin"></i></a>
+                            &emsp; <a href="https//:instagram.com"><i class="fa fa-instagram"></i></a>
+                        </li>
+                        <li><i class="fa fa-map-marker"></i>&nbsp;15, Ayangburen Rd., Ikorodu, Lagos, Nigeria</li>
+                        <li><a href="medicare@example.com"><i class="fa fa-envelope"></i>&nbsp;medicare@example.com</a></li>
+                        <li><a href="tel:+2348180683046"><i class="fa fa-phone"></i>&nbsp;Call Us +2348180683046</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </section>
-    <footer>
-        <div class="subscribe">
-            <h1>Opening Hours</h1>
-            <p><i class="fa fa-clock-o"></i> We are open 24/7</p>
-            <form action="">
-                <label><h2>Subscribe to our Newsletter</h2></label><br>
-                <input type="email" name="email" placeholder="Enter your email here"> <input type="submit" value="SUBSCRIBE NOW">
-            </form>
-        </div>
-        <div class="contacts">
-            <ul>
-                <li>
-                    <a href="https//:facebook.com"><i class="fa fa-facebook"></i></a>
-                    &emsp; <a href="https//:twitter.com"><i class="fa fa-twitter"></i></a>
-                    &emsp; <a href="https//:linkedin.com"><i class="fa fa-linkedin"></i></a>
-                    &emsp; <a href="https//:instagram.com"><i class="fa fa-instagram"></i></a>
-                </li>
-                <li><i class="fa fa-map-marker"></i>&nbsp;15, Ayangburen Rd., Ikorodu, Lagos, Nigeria</li>
-                <li><a href="medicare@example.com"><i class="fa fa-envelope"></i>&nbsp;medicare@example.com</a></li>
-                <li><a href="tel:+2348180683046"><i class="fa fa-phone"></i>&nbsp;Call Us +2348180683046</a></li>
-            </ul>
-        </div>
-        <div class="copy">
-            <p>Copyright &copy;Medicare 2019. All rights reserved | This template was made by Taofeeq <i class="fa fa-hand-peace-o"></i></p>
-        </div>
-    </footer>
+            <div class="copy">
+                <p>Copyright &copy;Medicare 2019. All rights reserved | This template was made by Taofeeq <i class="fa fa-hand-peace-o"></i></p>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
