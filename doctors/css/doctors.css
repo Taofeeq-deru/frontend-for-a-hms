@@ -1,0 +1,91 @@
+section .about{
+    margin: 5% 8%;
+    color: rgb(39, 38, 38);
+    font-family: calibri;
+    font-size: 20px;
+    /* height: 1100px; */
+}
+section .about h1{
+    text-transform: capitalize;
+    text-align: center;
+    padding-bottom: 5%;
+    font-size: 40px;
+}
+section .about .about-dr img{
+    width: 400px;
+    height: 400px;
+    border-radius: 100%;
+}
+section .about .about-dr{
+    width: 40%
+}
+section .about .about-dr i{
+    color: rgb(39, 38, 38);
+    padding: 0 20px;
+}
+section .about .about-dr p{
+    text-align: justify;
+}
+section .about .appointment{
+    float: right;
+    width: 40%;
+    margin-top: -72%;
+    background: rgb(192, 209, 241);
+    padding: 1% 2%;
+}
+section .about .appointment h2{
+    text-transform: uppercase;
+}
+section .about .appointment form fieldset{
+    margin: 5px 5px;
+}
+section .about .appointment form fieldset ul li{
+    padding: 5px 5px;
+    list-style: none;
+}
+section .about .appointment form input[type="submit"]{
+    height: 30px;
+    background: rgb(52, 72, 114);
+    border: 1px solid rgb(52, 72, 114);
+    color: #fff;
+    margin: 10px 10px;
+}
+section .contact-us .leave-message form textarea{
+    width: 95%;
+}
+/*max of 1024px*/
+@media screen and (max-width: 1024px){
+    section .about .about-dr img{
+        width: 100%;
+        height: 100%;
+    }
+    section .about .appointment{
+        width: 50%;
+        margin-top: -90%;
+    }
+}
+/*max of 900px*/
+@media screen and (max-width: 900px){
+    section .about .appointment{
+        width: 50%;
+        margin-top: -105%;
+    }
+}
+@media screen and (max-width: 780px){
+    section .about{
+        margin-left: 10%;
+    }
+    section .about .about-dr{
+        width: 80%;
+    }
+    section .about .appointment{
+        float: none;
+        width: 80%;
+        margin-top: 0;
+    }
+}
+@media screen and (max-width: 661px){
+    section .about h1{
+        font-size: 30px;
+    }
+}
