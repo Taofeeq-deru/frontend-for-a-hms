@@ -186,26 +186,6 @@ section .head .make-appoint button{
 section .head .make-appoint button:hover{
     cursor: pointer;
 }
-section .head .make-appoint .dropdown{
-    position: relative;
-}
-section .head .make-appoint .dropdown-content{
-    position: absolute;
-    display: none;
-    min-width: 300px;
-    /* height: 600px; */
-    background: #fff;
-    margin-top: -120%;
-    border: none;
-    box-shadow: 0 0 5px 0.5px rgb(39, 38, 38);
-    z-index: 99;
-}
-/* .show{
-    display: block;
-} */
-section .head .make-appoint .dropdown:hover .dropdown-content, .dropdown:focus .dropdown-content{
-    display: block;
-}
 section .appointment{
     background: rgb(158, 173, 201);
     font-size: 15px;
